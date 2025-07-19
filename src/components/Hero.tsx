@@ -106,7 +106,7 @@ const Hero: React.FC = () => {
 
                 <div className="flex lg:justify-end items-center space-x-4">
                   <a
-                    href="https://github.com"
+                    href="https://github.com/Bhikule19"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 bg-gray-100 dark:bg-gray-800 hover:bg-primary-100 dark:hover:bg-primary-900 rounded-full transition-all duration-300 hover:scale-110"
@@ -114,7 +114,7 @@ const Hero: React.FC = () => {
                     <Github className="w-5 h-5 text-gray-700 dark:text-gray-300" />
                   </a>
                   <a
-                    href="https://linkedin.com"
+                    href="https://www.linkedin.com/in/abhishek-bhikule/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 bg-gray-100 dark:bg-gray-800 hover:bg-primary-100 dark:hover:bg-primary-900 rounded-full transition-all duration-300 hover:scale-110"
