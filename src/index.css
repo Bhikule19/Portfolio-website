@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom font declaration */
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./components/assets/fonts/Gilroy-SemiBold.f3ed44cd.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Use Gilroy for all headings and important text */
+h1, h2, h3, h4, h5, h6,
+.font-heading,
+.font-display {
+  font-family: 'Gilroy', 'Inter', sans-serif;
+  font-weight: 600;
+}
+
+/* Navigation links */
+nav button,
+nav a {
+  font-family: 'Gilroy', 'Inter', sans-serif;
+}
+
+/* Buttons */
+button {
+  font-family: 'Gilroy', 'Inter', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer utilities {
+  .animate-fade-in {
+    opacity: 0;
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+
+  .animate-fill-progress {
+    transition: width 1s ease-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Custom cursor for hover effects */
+  .group:hover {
+    cursor: pointer;
+  }
+
+  /* Smooth transitions for all interactive elements */
+  button, a, input, textarea {
+    transition: all 0.2s ease-in-out;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f8f9fa;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #10b981;
+    border-radius: 2px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #059669;
+  }
+
+  /* Dark mode scrollbar */
+  .dark ::-webkit-scrollbar-track {
+    background: #1f2937;
+  }
+}
+
+/* Background pattern animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Text gradient animations */
+@keyframes gradient-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 3s ease infinite;
+}
