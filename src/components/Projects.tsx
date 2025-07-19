@@ -1,7 +1,7 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import { ExternalLink, Github, ArrowRight, Sparkles } from 'lucide-react';
-import docEaseImage from './assets/images/docease.png';
+import docEaseImage from './assets/images/docEase.png';
 import netfix from './assets/images/netflix.png';
 
 
